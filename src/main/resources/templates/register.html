@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<form class="registration" method="post" action="">
+    <input type="text" class="name" placeholder="Username" name="name">
+    <input type="text" class="password" placeholder="Password" name="password">
+    <button type="submit" class="button">Register</button>
+    <div class="already">
+        <a href="login">Already have an account?</a>
+    </div>
+
+</form>
+</body>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+
+        .already{
+            font-size: 10px;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .registration {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .name, .password, .button{
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .button:hover {
+            background-color: gray;
+        }
+        .button:hover,.name:hover,.password:hover{
+            transform: skew(-10deg);
+        }
+    </style>
+</head>
+
+</html>
